@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+/* ******************** */
+/* TITLE SECTION */
+/* ******************** */
+#section-title {
+  background-image: linear-gradient(
+    0deg,
+    rgba(20, 20, 20, 0.5),
+    rgba(20, 20, 20, 0.3)
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.navbar {
+  /* background-color: #0a0a0a; */
+  background-color: transparent;
+  color: #fff;
+}
+
+.collapse .navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.navbar-nav .nav-item .nav-link:link,
+.navbar-nav .nav-item .nav-link:visited {
+  color: #fff;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:active {
+  color: rgb(125, 125, 125);
+}
+
+.nav-link.active {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 3.2rem;
+  bottom: 20%;
+  color: #fff;
+}
+
+.home-content h1 {
+  font-size: 6.4rem;
+  font-weight: 600;
+}
+
+.home-content p:nth-of-type(1) {
+  font-size: 4.8rem;
+  font-weight: 500;
+}
+
+.home-content p:nth-of-type(2) {
+  font-size: 3.2rem;
+  width: 30%;
+  font-weight: 500;
+}
+
+.home-content p:nth-of-type(3) {
+  font-size: 1.8rem;
+  width: 30%;
+  font-weight: 500;
+}
+
+.movie-description-buttons {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-top: 3.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.movie-description-buttons button {
+  font-size: 2.4rem;
+  padding: 1.2rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.movie-description-buttons button:hover {
+  background-color: #000;
+  color: #fff;
+  outline: none;
+}
+
+#section-title nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#background-video {
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+}
+
+.user-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+/* ******************** */
+/* STREAMING SECTION */
+/* ******************** */
+#streaming-section {
+  background-color: #141414;
+}
+
+.all-genres {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-cards {
+  display: flex;
+  gap: 0.8rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.movie-cards-top {
+  display: flex;
+  gap: 1.6rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.my-list h2 {
+  font-size: 2.8rem;
+  grid-column: 1/-1;
+  margin-bottom: 1.2rem;
+}
+
+.movie-card {
+  background-image: linear-gradient(
+      rgba(20, 20, 20, 0.2),
+      rgba(20, 20, 20, 0.3)
+    ),
+    url("../images/stream.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 13rem;
+  min-width: 24rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card-top {
+  background-image: linear-gradient(
+      rgba(20, 20, 20, 0.2),
+      rgba(20, 20, 20, 0.3)
+    ),
+    url("../images/stream.jpg");
+  background-position: start;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20rem;
+  min-width: 16rem;
+  border-radius: 0.5rem;
+}
+
+.top-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -2rem;
+}
+
+.number-rank {
+  font-size: 24rem;
+  font-weight: 700;
+}
+
+/* Scroll bar design */
+.movie-cards::-webkit-scrollbar {
+  width: 1em;
+  height: 1rem;
+}
+
+.movie-cards::-webkit-scrollbar-track {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.movie-cards::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #4d4d4d;
+  outline: 2px solid slategrey;
+}
+
+.movie-cards::-webkit-scrollbar:vertical {
+  display: none;
+}

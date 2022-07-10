@@ -1,20 +1,64 @@
-/* Title Section */
-.navbar {
-  padding: 1%;
-  background-color: #fdfaf6;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.Download-button {
-  margin: 4% 4% 4% 0;
+html {
+  font-size: 62.5%;
+}
+
+/* ******************** */
+/* TITLE SECTION */
+/* ******************** */
+
+.navbar {
+  padding: 1.2rem;
+  background-color: #fdfaf6;
+  font-size: 1.8rem;
+}
+
+.download-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 2.4rem;
+  margin-right: 4.8rem;
+}
+
+.download-button {
+  font-size: 1.8rem;
 }
 
 .netflix-brand {
-  font-size: 40px;
-  font-weight: bolder;
+  font-size: 4rem;
+  font-weight: 600;
   font-family: "Ubuntu", sans-serif;
+  margin-right: 2.4rem;
 }
 
-/* Search */
+.authenticate-buttons {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.authenticate-btn {
+  padding: 0.8rem 2.4rem;
+  font-size: 1.4rem;
+}
+
+.authenticate-btn:last-child {
+  margin-top: 1.2rem;
+}
+
+.authenticate-btn:hover {
+  color: #000;
+  background-color: #fff;
+}
+/* ******************** */
+/* SEARCH */
+/* ******************** */
+
 .title-search {
   position: relative;
 }
@@ -28,11 +72,13 @@
       rgba(0, 0, 0, 0.8) 100%
     ),
     url("./../images/netflix.jpg");
-  height: 700px;
+  min-height: 70rem;
   width: 100%;
 }
 
-/* Quick-search */
+/* ******************** */
+/* QUICK-SEARCH */
+/* ******************** */
 
 .quickSearch {
   color: #fff;
@@ -55,11 +101,11 @@
   position: relative;
   z-index: 2;
 }
-.home-newsletter .single h2 {
+.home-newsletter .single h3 {
   font-size: 22px;
   color: white;
-  text-transform: uppercase;
-  margin-bottom: 40px;
+  /* text-transform: uppercase; */
+  margin-bottom: 1.6rem;
 }
 .home-newsletter .single .form-control {
   height: 50px;
@@ -99,246 +145,88 @@
   }
 }
 
-/* Streaming Section */
-#streaming {
+/* *********************** */
+/* STREAMING SECTION */
+/* *********************** */
+
+#streaming,
+#download,
+#everywhere,
+#children,
+#faq {
   background-color: #000000;
   border-bottom: 5px solid #222;
-  height: 450px;
+  min-height: 45rem;
   width: 100%;
 }
 
 .heading-text {
   color: #fff;
-  text-align: left;
-  padding-left: 10%;
-  padding-top: 8%;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2.4rem;
 }
 
-.heading-text h1 {
-  margin-bottom: 20px;
+.heading-text h2 {
+  font-size: 4.4rem;
 }
 
-.stream-img-div {
-  text-align: center;
-  padding-top: 40px;
+.heading-text p {
+  font-size: 2.2rem;
+}
+
+.stream-img-div,
+.download-img-div,
+.everywhere-img-div,
+.children-img-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.2rem;
 }
 
 .stream-image {
   width: 70%;
 }
-
-@media (max-width: 1200px) {
-  .heading-text {
-    text-align: center;
-    padding-top: 10%;
-  }
-
-  .stream-image {
-    width: 70%;
-    height: 100%;
-  }
-
-  .download-image {
-    width: 70%;
-    height: 100%;
-  }
-
-  .everywhere-image {
-    width: 70%;
-    height: 100%;
-  }
-
-  .children-image {
-    width: 70%;
-    height: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  #streaming {
-    padding-top: 0;
-  }
-  .stream-image {
-    height: 80%;
-  }
-}
-
-@media (min-width: 628px) and (max-width: 768px) {
-  #streaming {
-    padding-top: 0;
-  }
-  .stream-image {
-    height: 65%;
-  }
-}
-
-@media (min-width: 768px) {
-  .stream-image {
-    height: 100%;
-    padding-top: 20px;
-  }
-  #streaming {
-    padding-top: 20px;
-  }
-}
-
-/* Download Section */
-#download {
-  background-color: #000000;
-  border-bottom: 5px solid #222;
-  height: 570px;
-  width: 100%;
-}
-
-.download-img-div {
-  text-align: center;
-}
+/* *********************** */
+/* DOWNLOAD SECTION */
+/* *********************** */
 
 .download-image {
   width: 70%;
 }
 
-@media (max-width: 768px) {
-  #download {
-    padding-top: 0;
-  }
-  .download-image {
-    height: 80%;
-  }
-}
-
-@media (min-width: 530px) and (max-width: 768px) {
-  #download {
-    padding-top: 0;
-  }
-  .download-image {
-    height: 65%;
-  }
-
-  .heading-text-download {
-    padding: 0 0 0 50px;
-    width: 80%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 768px) {
-  .download-image {
-    height: 100%;
-    padding-top: 20px;
-  }
-  #download {
-    padding-top: 20px;
-  }
-}
-
-/* Everywhere Section */
-#everywhere {
-  background-color: #000000;
-  border-bottom: 5px solid #222;
-  height: 500px;
-  width: 100%;
-}
-
-.everywhere-img-div {
-  text-align: center;
-  padding-top: 50px;
-}
-
+/* *********************** */
+/* EVERYWHERE SECTION */
+/* *********************** */
 .everywhere-image {
   width: 60%;
 }
 
-@media (max-width: 768px) {
-  #everywhere {
-    padding-top: 0;
-  }
-  .everywhere-image {
-    height: 80%;
-  }
-}
-
-@media (min-width: 530px) and (max-width: 768px) {
-  #everywhere {
-    padding-top: 0;
-  }
-  .everywhere-image {
-    height: 65%;
-  }
-}
-
-@media (min-width: 768px) {
-  .everywhere-image {
-    height: 100%;
-    padding-top: 20px;
-  }
-  #everywhere {
-    padding-top: 20px;
-  }
-}
-
-/* Children Section */
-#children {
-  background-color: #000000;
-  border-bottom: 5px solid #222;
-  height: 550px;
-  width: 100%;
-}
-
-.children-img-div {
-  text-align: center;
-}
+/* *********************** */
+/* CHILDREN SECTION */
+/* *********************** */
 
 .children-image {
-  margin-top: 30px;
   width: 60%;
 }
 
-@media (max-width: 768px) {
-  #children {
-    padding-top: 0;
-  }
-  .children-image {
-    height: 80%;
-  }
-}
+/* *********************** */
+/* FAQ SECTION */
+/* *********************** */
 
-@media (min-width: 530px) and (max-width: 768px) {
-  #children {
-    padding-top: 0;
-  }
-  .children-image {
-    height: 60%;
-  }
-  .heading-text-children {
-    padding: 0 0 0 50px;
-    width: 90%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 768px) {
-  .children-image {
-    height: 100%;
-    padding-top: 20px;
-  }
-  #children {
-    padding-top: 20px;
-  }
-}
-
-/* FAQ Section */
 #faq {
-  background-color: #000000;
-  border-bottom: 5px solid #222;
-  height: 650px;
   text-align: center;
-  width: 100%;
+  padding: 6.4rem;
 }
 
 #faq h1 {
   color: #fff;
-  padding: 5% 0;
+  font-size: 3.2rem;
+  margin-bottom: 4.8rem;
 }
 
 .accordion {
@@ -349,40 +237,30 @@
 .accordion-button {
   background-color: #303030;
   color: #fff;
+  font-size: 2.2rem;
 }
 
 .accordion-body {
-  font-size: 35px;
+  font-size: 1.8rem;
+  overflow: scroll;
 }
 
 .get-started {
   color: #fff;
-  padding: 20px 0;
+  margin-top: 6.4rem;
 }
 
-/* Footer Section*/
+/* *********************** */
+/* FOOTER*/
+/* *********************** */
+
 #footer {
-  border-bottom: 1px solid #222;
-  height: 450px;
+  min-height: 30rem;
   width: 100%;
+  padding: 8rem;
+  font-size: 1.8rem;
 }
 
 .copyright {
-  background-color: dark;
   margin-top: 50px;
-}
-
-@media (max-width: 768px) {
-  #footer {
-    background-color: #212529;
-  }
-  .copyright {
-    color: #fff;
-  }
-
-  .footer-container {
-    background-color: #212529;
-    margin: 0 auto;
-    width: 100%;
-  }
 }

@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home-Netflix</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="images/netflix-logo.png"
+      type="image/x-icon"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap link for Css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- External Css link -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/home.css" />
+
+    <!-- Font-awesome Script -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+    ></script>
+
+    <!-- Jquery for Bootstrap -->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  </head>
+
+  <body>
+    <!-- ////////////////////////////////////////////////////////////////// -->
+    <!-- Title Section -->
+    <section class="section-title" id="section-title">
+      <video id="background-video" autoplay loop plays-inline>
+        <source src="images/bheemlanayak.mp4" type="video/mp4" />
+        <source src="images/video.mp4" type="video/mp4" />
+      </video>
+      <!-- Home content -->
+      <div class="home-content">
+        <h1>Netflix Movie</h1>
+        <p>Bheemla Nayak</p>
+        <p>Watch Now</p>
+        <p>
+          Bheemla Nayak is a 2022 Indian Telugu-language action drama film
+          directed by Saagar K Chandra from a screenplay by Trivikram Srinivas.
+          Produced by Sithara Entertainments.
+        </p>
+        <div class="movie-description-buttons play">
+          <button class="play-btn"><i class="fas fa-play"></i> Play</button>
+          <button class="btn btn-lg-outline btn-dark">
+            <i class="fas fa-info-circle"></i> More info
+          </button>
+        </div>
+      </div>
+      <!-- NavBar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand netflix-brand" href="#" style="color: #e50914"
+            >Netflix</a
+          >
+          <button
+            class="navbar-toggler nav-toggle-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tv shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">New & Popular</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Audio & Subtitles</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav user-control">
+              <li class="nav-item">
+                <form>
+                  <!-- <input
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                /> -->
+                  <i class="fas fa-search" type="submit"></i>
+                </form>
+              </li>
+              <li class="nav-item">
+                <i class="fas fa-bell"></i>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle user-animated-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="images/netflix-user2.png"
+                    class="user-animated-img"
+                    alt="Netflix-user animated image"
+                    style="width: 3.2rem"
+                  />
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- ////////////////////////////////////////////////////////////////// -->
+    <!-- Streaming Section -->
+    <section id="streaming-section" class="streaming-section">
+      <div class="all-genres">
+        <div class="my-list general-container">
+          <h2>My List</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Continue Watching</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Tv Shows</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Trending Now</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Anime</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Romantic Movies</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Tv Sci-fi & Horror</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Tv Comedies</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Blockbuster US Comedies</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Bollywood Sweethearts</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>New Releases</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Bingeworthy TV Action & Adventure</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Critically-acclaimed Exciting movies</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Secrets & Lies</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Romantic Comedies</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Horror Movies</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Kid's TV</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Only on Netflix</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>US Thrillers</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Futuristic Sci-Fi</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Korean TV Dramas</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Adult Animation</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list my-list-top general-container">
+          <h2>Top 10 TV Shows in India Today</h2>
+          <div class="movie-cards movie-cards-top">
+            <div class="top-card">
+              <p class="number-rank">1</p>
+              <div class="movie-card movie-card-top"></div>
+            </div>
+            <div class="top-card">
+              <p class="number-rank">2</p>
+              <div class="movie-card movie-card-top"></div>
+            </div>
+            <div class="top-card">
+              <p class="number-rank">3</p>
+              <div class="movie-card movie-card-top"></div>
+            </div>
+            <div class="top-card">
+              <p class="number-rank">4</p>
+              <div class="movie-card-top"></div>
+            </div>
+            <div class="top-card">
+              <p class="number-rank">5</p>
+              <div class="movie-card movie-card-top"></div>
+            </div>
+            <div class="top-card">
+              <p class="number-rank">6</p>
+              <div class="movie-card movie-card-top"></div>
+            </div>
+            <div class="top-card">
+              <p class="number-rank">7</p>
+              <div class="movie-card movie-card-top"></div>
+            </div>
+            <div class="top-card">
+              <p class="number-rank">8</p>
+              <div class="movie-card movie-card-top"></div>
+            </div>
+            <div class="top-card">
+              <p class="number-rank">9</p>
+              <div class="movie-card movie-card-top"></div>
+            </div>
+            <div class="top-card">
+              <p class="number-rank">10</p>
+              <div class="movie-card movie-card-top"></div>
+            </div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Crime TV Thrillers</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Suspensful TV Shows</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Horror Movies</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Bingeworthy Sci-Fi TV</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>TV Comedies</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Bingeworthy Suspensful US TV Dramas</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Indian Comedies</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Award-Winning Films</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Teen TV Dramas</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Feel-good Indian Movies</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>US TV Shows Dubbed in Hindi</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Comedies about Friendship</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Docuemntaries</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list my-list-top general-container">
+          <h2>Top 10 TV Shows in India Today</h2>
+          <div class="movie-cards movie-cards-top">
+            <div class="top-card">
+              <p class="number-rank">1</p>
+              <div class="movie-card movie-card-top"></div>
+            </div>
+            <div class="top-card">
+              <p class="number-rank">2</p>
+              <div class="movie-card movie-card-top"></div>
+            </div>
+            <div class="top-card">
+              <p class="number-rank">3</p>
+              <div class="movie-card movie-card-top"></div>
+            </div>
+            <div class="top-card">
+              <p class="number-rank">4</p>
+              <div class="movie-card-top"></div>
+            </div>
+            <div class="top-card">
+              <p class="number-rank">5</p>
+              <div class="movie-card movie-card-top"></div>
+            </div>
+            <div class="top-card">
+              <p class="number-rank">6</p>
+              <div class="movie-card movie-card-top"></div>
+            </div>
+            <div class="top-card">
+              <p class="number-rank">7</p>
+              <div class="movie-card movie-card-top"></div>
+            </div>
+            <div class="top-card">
+              <p class="number-rank">8</p>
+              <div class="movie-card movie-card-top"></div>
+            </div>
+            <div class="top-card">
+              <p class="number-rank">9</p>
+              <div class="movie-card movie-card-top"></div>
+            </div>
+            <div class="top-card">
+              <p class="number-rank">10</p>
+              <div class="movie-card movie-card-top"></div>
+            </div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Sci-Fi & Fantasy</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Kid's TV</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Comedies</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Fantasy TV Shows</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Girls Night In</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Children & Family TV</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Children & Family Movies</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>TV Thrillers Starring Women</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Indian TV Shows</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+        <div class="my-list general-container">
+          <h2>Top Searches</h2>
+          <div class="movie-cards">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ////////////////////////////////////////////////////////////////// -->
+    <!-- Everywhere Section -->
+
+    <!-- ////////////////////////////////////////////////////////////////// -->
+    <!-- Children Section -->
+
+    <!-- ////////////////////////////////////////////////////////////////// -->
+    <!-- FAQ Section -->
+
+    <!-- ////////////////////////////////////////////////////////////////// -->
+    <!-- Footer -->
+    <footer
+      class="bg-dark text-center text-white"
+      id="footer"
+      style="background-color: #212529"
+    >
+      <!-- Grid container -->
+      <section class="container p-4 footer-container">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+
+          <!-- Github -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links -->
+        <section class="mb-4 links">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">FAQ</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Investor Relations</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Privacy</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Speed Test</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Help Centre</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Jobs</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Cookie Preferences</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Legal Notices</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Account</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Ways to Watch</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Corporate Information</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Only on Netflix</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Media Centre</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Terms of Use</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+        <!-- Copyright -->
+        <div class="text-center p-3 copyright">
+          © 2022 Copyright:
+          <a class="text-white">Netflix India</a>
+        </div>
+        <!-- Copyright -->
+      </section>
+      <!-- Grid container -->
+    </footer>
+    <!-- Script for Bootstrap -->
+    <script>
+      const playBtn = document.querySelector(".play-btn");
+      const videoEl = document.querySelector("video");
+      const titleSection = document.querySelector("#section-title");
+      const obs = new IntersectionObserver(
+        function (entries) {
+          const ent = entries[0];
+          if (ent.isIntersecting) {
+            playBtn.parentElement.firstElementChild.innerHTML =
+              '<i class="fas fa-play"></i> Play';
+            videoEl.play();
+          }
+          if (!ent.isIntersecting) {
+            playBtn.parentElement.firstElementChild.innerHTML =
+              '<i class="fas fa-pause"></i> Pause';
+            videoEl.pause();
+          }
+        },
+        {
+          root: null,
+          threshold: 0.5,
+        }
+      );
+      obs.observe(titleSection);
+      playBtn.addEventListener("click", function (e) {
+        playBtn.parentElement.classList.toggle("play");
+        if (playBtn.parentElement.classList.contains("play")) {
+          playBtn.parentElement.firstElementChild.innerHTML =
+            '<i class="fas fa-play"></i> Play';
+          videoEl.play();
+        } else {
+          playBtn.parentElement.firstElementChild.innerHTML =
+            '<i class="fas fa-pause"></i> Pause';
+          videoEl.pause();
+        }
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- External script file -->
+    <script src="index.js"></script>
+  </body>
+</html>
